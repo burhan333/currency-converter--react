@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+/* *
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+body
+{
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p
+{
+    margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top
+{
+    background-image: url('../src/images/bg.PNG');
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.top .title
+{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.top .desc
+{
+    font-size: 20px;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body
+{
+    background: white;
+    margin: -100px auto 0;
+    width: 900px;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+    padding: 30px 50px;
+}
+
+.body .head
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.body p
+{
+    font-weight: 600;
+}
+
+.body .box
+{
+    width: 30%;
+}
+
+.body input
+{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    box-shadow: rgb(0 17 51 / 5%) 0px 3px 15px;
+    padding: 8px 12px;
+    color: rgb(20, 30, 55);
+    background: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+.body input input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.body input[type=number] 
+{
+    -moz-appearance: textfield;
+}
+
+.body select
+{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    box-shadow: rgb(0 17 51 / 5%) 0px 3px 15px;
+    padding: 8px 12px;
+    color: rgb(20, 30, 55);
+    background: none;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+}
+
+.body_bot
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.body_bot button
+{
+    background: #006fe8;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 8px 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.body_bot button:hover
+{
+    background: transparent;
+    border: 2px solid #006fe8;
+    color: #006fe8;
+}
+
+.body_bot .span1
+{
+    color: #5c667b;
+    font-weight: 600;
+}
+
+.body_bot .span2
+{
+    color: #2e3c57;
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+
+.err
+{
+    font-size: 14px;
+    color: red;
+}
+
+.tables
+{
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 30%);
+    background: white;
+    width: 900px;
+    margin: 50px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tables table
+{
+    width: 100%;
+}
+
+.tables thead
+{
+    background-color: #F0F5FA;
+}
+
+.tables tr
+{
+    padding: 20px;
+}
+
+.tables th
+{
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.tables td
+{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.tables tr td:first-child
+{
+    color: #24add1;
+}
+
+@media (max-width: 991px)
+{
+    .top .title 
+    {
+        font-size: 24px;
+    }
+
+    .top .desc 
+    {
+        font-size: 16px;
+    }
+
+    .body
+    {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .tables
+    {
+        width: 100%;
+    }
 }
